@@ -1,0 +1,12 @@
+<ul>
+  {% for post in projectlist %}
+    <li>
+      <strong>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </strong>
+
+     <a href="{{ post.data.linkgit }}" target="_blank">Github</a>
+     <a href="{{ post.data.linkcode }}" target="_blank">Codepen</a>
+    </li>
+  {% endfor %}
+</ul>
