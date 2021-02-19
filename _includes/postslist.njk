@@ -1,18 +1,15 @@
 <ul>
   {% for post in postslist %}
-    <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-
-      -
-
+    <li class="blog__post">
       <span>
-        {{ post.data.date }}
+        <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
       </span>
-      <span>
-        {{ post.data.description }}
-      </span>
+      
+      <a class="blog__post__title" href="{{ post.url | url }}">{{ post.data.title }}</a>
+
+      <p>{{ post.data.description }}</p>
+
+      <a class="blog__post__more" href="{{ post.url | url }}">Vertel me meer ...</a>
     </li>
   {% endfor %}
 </ul>

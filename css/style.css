@@ -1,0 +1,13 @@
+@import "reset.css";
+@import "home.css";  
+@import "blog.css"; 
+@import "post.css"; 
+@import "projects.css"; 
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}

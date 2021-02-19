@@ -6,7 +6,9 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "moment": "^2.29.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "npx eleventy",

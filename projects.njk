@@ -2,5 +2,8 @@
 layout: layouts/base.njk
 permalink: /projects/
 ---
-{% set projectlist = collections.posts %}
-{% include "projectlist.njk" %}
+<section>
+  <h2>Projecten</h2>
+  {% set projectlist = collections.posts %}
+  {% include "projectlist.njk" %}
+</section>
