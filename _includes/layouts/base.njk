@@ -1,6 +1,7 @@
 <html>
   <head>
-    <title>100Days</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
     <link rel="stylesheet" href="../../css/style.css">
   </head>
   <body>
@@ -10,13 +11,16 @@
         <nav>
           <ul class="link__list">
             <li>
-              <a href="/posts">Blog</a>
+              <a class="link__list__item {% if title == "posts" %} active{% endif %}" href="/posts">Blog</a>
             </li>
             <li class="link__home">
-              <a href="/">100 Dagen - 100 Projecten</a>
+              <a {% if title == "home" %}class="active"{% endif %} href="/">100 Dagen - 100 Projecten</a>
+            </li>
+            <li class="link__home__mobile">
+              <a {% if title == "home" %}class="active"{% endif %} href="/">100 D/P</a>
             </li>
             <li>
-              <a href="/projects">Projects</a>
+              <a class="link__list__item {% if title == "projects" %} active{% endif %}" href="/projects">Projects</a>
             </li>
           </ul>
         </nav>
@@ -28,7 +32,7 @@
     </main>
 
     <footer>
-      <p>Website: <a href="http://conorvanoystaeyen.be/" target="_blank">conorvanoystaeyen.be</a></p>
+      <p>Website: <a class="footer__link" href="http://conorvanoystaeyen.be/" target="_blank">conorvanoystaeyen.be</a></p>
     </footer>
   </body>
 </html>

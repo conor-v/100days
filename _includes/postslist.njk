@@ -1,7 +1,7 @@
 <ul>
   {% for post in postslist %}
     <li class="blog__post">
-      <span>
+      <span class="date">
         <time datetime="{{ post.data.date | dateIso }}">{{ post.data.date | dateReadable }}</time>
       </span>
       

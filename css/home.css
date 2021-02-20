@@ -1,0 +1,35 @@
+.subtitle {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.space {
+  margin-bottom: 1.5rem;
+}
+
+.big__space {
+  margin-bottom: 4rem;
+}
+
+.button {
+  background-color: #C2EEBF;
+  color: #546C25;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #546C25;
+  color: #C2EEBF;
+}
+
+.web__link {
+  font-weight: bold;
+  color: #864C9A;
+}
+
+.web__link:hover {
+  color: #3B1E45;
+}
